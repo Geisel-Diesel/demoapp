@@ -1,0 +1,45 @@
+<!-- <div class="mat-display-3">Welcome to Home!<div> Can be sized from 1 to 4 -->
+
+<div>
+    <div class="mat-body-1">Different types of buttons</div> <br>
+    <button mat-button>Click me!!</button>
+    <button mat-raised-button>No Click me!</button>
+    <button mat-flat-button>I said Click me!</button>
+    <button mat-stroked-button>Please Click me!</button>
+</div>
+
+<div>
+    <br>
+    <div class="mat-body-1">More buttons</div> <br>
+    <button mat-icon-button>Icon</button>
+    <button mat-fab>Fab</button>
+    <button mat-mini-fab>Mini</button>
+</div>
+
+<div>
+    <br>
+    <div class="mat-body-1">Button colors</div> <br>
+    <button color="primary" mat-raised-button>Primary!</button>
+    <button color="accent" mat-flat-button>Accent</button>
+    <button color="warn" mat-stroked-button>Warn</button>
+    <button color="warn" disableRipple mat-stroked-button>Disable Ripple</button>
+</div> 
+
+<div>
+    <br>
+    <div class="mat-body-1">Button toggle value feedback</div> <br>
+    <mat-button-toggle #toggleBtn>Toggle</mat-button-toggle>
+    {{toggleBtn.checked}}
+</div>
+
+<div>
+    <br>
+    <div class="mat-body-1">Group toggle feedback</div> <br>
+    <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
+        <mat-button-toggle value="angular">Angular</mat-button-toggle>
+        <mat-button-toggle value="react">React</mat-button-toggle>
+        <mat-button-toggle value="vue">Vue</mat-button-toggle>
+    </mat-button-toggle-group>
+
+    {{toggleGroup.value}}
+</div>
